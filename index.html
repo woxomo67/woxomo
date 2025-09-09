@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Steal a Monke Mods</title>
+  <style>
+    /* Reset + Fonts */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top, #0f0f0f, #000);
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    h1, h2 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #1a1a1a, #000);
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, #00ffcc, #ff00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #00ffcc; }
+      to   { text-shadow: 0 0 20px #ff00ff; }
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin: 1rem 0 2rem;
+      max-width: 600px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(90deg, #ff00ff, #00ffcc);
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00ffcc, 0 0 20px #ff00ff;
+    }
+
+    /* Mods Showcase */
+    .mods {
+      padding: 4rem 2rem;
+      background: #111;
+      text-align: center;
+    }
+    .mods h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #00ffcc;
+    }
+    .mod-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .mod-card {
+      background: #1a1a1a;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .mod-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px #ff00ff77, 0 0 25px #00ffcc77;
+    }
+    .mod-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .mod-card h3 {
+      margin: 1rem;
+      color: #ff00ff;
+    }
+    .mod-card p {
+      margin: 0 1rem 1.5rem;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #000;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Steal a Monke Mods</h1>
+    <p>The ultimate hub for custom mods. Join our Discord to explore unique mods and become part of the community.</p>
+    <a href="https://discord.gg/PEGTbzyQCN" target="_blank" class="btn">Join Discord</a>
+  </section>
+
+  <!-- Mods Showcase -->
+  <section class="mods">
+    <h2>Featured Mods</h2>
+    <div class="mod-grid">
+      <div class="mod-card">
+        <img src="https://via.placeholder.com/400x200?text=Mod+1" alt="Mod 1">
+        <h3>Mod 1</h3>
+        <p>A short description of Mod 1. Replace this text with your real mod details.</p>
+      </div>
+      <div class="mod-card">
+        <img src="https://via.placeholder.com/400x200?text=Mod+2" alt="Mod 2">
+        <h3>Mod 2</h3>
+        <p>A short description of Mod 2. Add screenshots or cool highlights.</p>
+      </div>
+      <div class="mod-card">
+        <img src="https://via.placeholder.com/400x200?text=Mod+3" alt="Mod 3">
+        <h3>Mod 3</h3>
+        <p>A short description of Mod 3. Customize this with details for your server.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Steal a Monke Mods. All rights reserved.
+  </footer>
+
+</body>
+</html>
